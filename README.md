@@ -8,7 +8,7 @@ MikuMikuDance (32bit) のKinectインタフェースであるDLL (DxOpenNI.dll)を、動的に選
 
 * Version: 1.20 (2011/01/12)
 
-* 配布場所: (http://www.moccos.info/works/software/mmd.html)[http://www.moccos.info/works/software/mmd.html]
+* 配布場所: [http://www.moccos.info/works/software/mmd.html](http://www.moccos.info/works/software/mmd.html)
 * ソースコード: [https://github.com/moccos/DxOpenNIProxy/](https://github.com/moccos/DxOpenNIProxy/)
 * 説明動画: [ニコニコ動画 sm13211158](http://www.nicovideo.jp/watch/sm13211158)
 
@@ -59,6 +59,7 @@ dll名と同じ名前のテキストファイルを開けるボタンをつけるとか
 * 序数による呼び出しを使っているので、Exportした関数の並びがオリジナルのDxOpenNI.dllと違っているとセグります。
 以下に示す並びを想定。
 
+<pre>
     [0] ?OpenNIClean@@YGXXZ
     [1] ?OpenNIDepthTexture@@YGXPAPAUIDirect3DTexture9@@@Z
     [2] ?OpenNIDrawDepthMap@@YGX_N@Z
@@ -66,6 +67,7 @@ dll名と同じ名前のテキストファイルを開けるボタンをつけるとか
     [4] ?OpenNIGetVersion@@YGXPAM@Z
     [5] ?OpenNIInit@@YG_NPAUHWND__@@_NPAUIDirect3DDevice9@@PA_W@Z
     [6] ?OpenNIIsTracking@@YGXPA_N@Z
+</pre>
 
 * 古いバージョンのDLLの読み込み
 
